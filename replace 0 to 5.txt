@@ -1,0 +1,12 @@
+class Solution{
+	public static int convertFive(int n){
+    StringBuilder str = new StringBuilder();
+   str.append(n);
+   for(int i = 0; i< str.length(); i++)
+   if(str.charAt(i) == '0')
+   str.setCharAt(i, '5');
+   return Integer.parseInt(str.toString());
+
+
+    }
+}

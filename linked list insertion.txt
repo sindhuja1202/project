@@ -1,0 +1,34 @@
+class solution
+{
+  public:
+    Node *insertAtBegining(Node *head, int x)
+    {
+       struct Node*newnode;
+       newnode->data=x;
+       newnode->next = null;
+       if(head==null)
+       {
+           return newnode;
+       }
+       newnode->next=head;
+       return newnode;
+    }
+    Node *insertAtEnd(Node *head, int x)  
+    {
+       struct Node*newnode;
+       newnode->data=x;
+       newnode->next = null;
+       if(head==null)
+       {
+           return newnode;
+       }
+       else{
+           struct Node*ptr=head;
+           while (ptr->next!=null)
+           ptr=ptr->next;
+           ptr->next=newnode;
+           newnode->next=null;
+       }
+    return head;
+    }
+};

@@ -1,7 +1,0 @@
-class Solution{   
-public:
-    void segregate0and1(int arr[], int n)
-    {
-        sort(arr,arr+n);
-    }
-};

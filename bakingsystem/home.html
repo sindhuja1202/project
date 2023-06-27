@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Banking System</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    
+    
+
+</head>
+<body>
+  <nav class="nav-bar">
+    <img src="./images/logo.svg" alt="" />
+    <div class="nav-items">
+      <a href="home.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="customer.html">Customers</a>
+
+    </div>
+
+    
+    
+  </nav>
+  <header class="hero-section">
+    <div class="hero-text-container">
+      <h1>
+        Next generation<br />
+        digital banking
+      </h1>
+      <p>
+        Take your financial life online. Your State Bank account<br />
+        will be a one-stop-shop for spending,saving,<br />budgeting,investing,
+        and much more.
+      </p>
+      <button>
+        <a href="/customer.html">Transfer Money</a>
+      </button>
+    </div>
+    <div class="hero-img-container">
+      <img src="./images/image-mockups.png" alt="" />
+    </div>
+  </header>
+  <div class="container">
+    <section class="why-us">
+      <h1>Why choose State Bank?</h1>
+      <p>
+        We leverage open banking to turn your bank account into your financial
+        hub.<br />Control your finances like never before.
+      </p>
+    </section>
+    <section class="features-section">
+      <div class="feature-item">
+        <img src="./images/icon-online.svg" alt="" />
+        <h1>Online Banking</h1>
+        <p>
+          Our modern web and mobile<br />
+          applications allow you to keep<br />
+          track of your finances whereever<br />
+          you are in the world.
+        </p>
+      </div>
+      <div class="feature-item">
+        <img src="./images/icon-budgeting.svg" alt="" />
+        <h1>Simple Budgeting</h1>
+        <p>
+          See exactly where your money<br />
+          goes every month.Recieve<br />
+          notifications when you're close to<br />
+          hitting your limits./p >
+        </p>
+      </div>
+
+      <div class="feature-item">
+        <img src="./images/icon-onboarding.svg" alt="" />
+        <h1>Fast Onboarding</h1>
+        <p>
+          We don't do branches.Open your<br />
+          accound minutes online and start<br />
+          taking controll of your finances<br />
+          right away.
+        </p>
+      </div>
+      <div class="feature-item">
+        <img src="./images/icon-api.svg" alt="" />
+        <h1>Open API</h1>
+        <p>
+          Manage your savings, investments,<br />
+          pension and much more from one<br />
+          account.Tracking your money has<br />
+          never been easier.
+        </p>
+      </div>
+    </section>
+
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="social-container">
+        <img src="./images/icon-facebook.svg" alt="" />
+        <img src="./images/icon-instagram.svg" alt="" />
+        <img src="./images/icon-twitter.svg" alt="" />
+        <img src="./images/icon-pinterest.svg" alt="" />
+      </div>
+      <div class="menu"> <br><br>
+        <a href="#">About us</a>
+      </div>
+
+
+  </footer>
+
+    <script>
+      var preloader = document.getElementById("loading");
+      function loader(){
+        preloader.style.display = 'none';
+      }
+    </script>
+
+   <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+    
+</body>
+</html>

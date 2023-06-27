@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>NP Tourism</title>
+	<style>
+		body{
+			margin:0px;
+			padding:0px;
+			background-image: linear-gradient(to right,#ff4e50,#f9d423);
+		}
+		.nav-color{
+			background:white;
+		}
+		.lis{
+			float:left;
+			margin-top:2%;
+
+		}
+		.lis-image{
+			position: relative;
+			left:2%;
+			margin-top:2%;
+			margin-left:2%;
+		}
+		.lis-desc{
+			position: relative;
+			left: 2%;
+			top:10%;
+			margin-top:2%;
+			margin-left:2%;
+		}
+		.fontAwesome{
+			font-family: 'Helvetica', FontAwesome, sans-serif;
+		}
+		.inside{
+			color: #284184;
+			font-family: 'Beth Ellen', cursive;
+		}
+		#insideh{
+			color:#284184;
+			font-family: 'Beth Ellen', cursive;
+		}
+		.insider{
+			color: white;
+			border-left:1px solid black;
+			font-family:'Permanent Marker', cursive;
+		}
+		.search{
+			margin-top:8%;
+			margin-left:38%;
+		}
+		.list-center{
+			width:50%;
+			margin-top:3%;
+			margin-left:15%;
+		}
+		input{
+			border-radius:50px;
+			height:50px;
+			padding:15px;
+			font-family: 'Beth Ellen', cursive;
+		}
+		.list-ele{
+			width:500px;
+		}
+		.placeicon{
+			font-family:fontAwesome;
+		}
+		.searchbut{
+			margin-left:48%;
+			margin-top:2%;
+			background-color:#2b5876;
+			color:whitesmoke;
+			font-family:'Permanent Marker', cursive;
+			border-radius:10px;
+
+		}
+		.topdest{
+			display:block;
+			margin-top: 9%;
+			font-size: 30px;
+			font-family:'Permanent Marker', cursive;
+			margin-left:36%;
+			width: 500px;
+			color: #2b5876;
+		}
+		.btn{
+			padding: .5rem 1.5rem;
+			border: none;
+			border-radius: 4rem;
+			background: #2b5876;
+			color: whitesmoke;
+			font-size: .7rem;
+			font-family: var(--Montserrat);
+			box-shadow: var(--primary-shadow);
+			cursor: pointer;
+		}
+		.btn-nav{
+			padding: .5rem 1.5rem;
+			border: none;
+			color: white;
+			border-radius: 4rem;
+			font-size: 1rem;
+			font-family: var(--Montserrat);
+			box-shadow: var(--primary-shadow);
+			cursor: pointer;
+		}
+		.mar-for-lis{
+			margin-top:2%;
+		}
+	</style>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+<div class="navbar navbar-expand-md navbar-light nav-color sticky-top" >
+	<div class="container-fluid">
+		<a class="navbar-brand" id="insideh" href="#">NP Tourism</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="navbarResponsive">
+			<div class="navbar-nav ml-auto ">
+				<div class="nav-item inside dropdown show ">
+					<a class="btn-nav nav-link" href="firstpage.html"><b>HOME</b></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- list items -->
+
+<div class="search">
+
+	<input class="placeicon" id="place" placeholder="Enter the place to search" type="text" size="35" >
+
+</div>
+<div >
+	<button class="searchbut" id="searchplace">search</button>
+</div>
+<div class="topdest">
+	<b>Top 10 vacation Destinations</b>
+</div>
+<div id="main">
+	<div class="list-group contop col-lg-9 list-center col-md-12 ">
+		<div class="list-group-item list-group-item-action mar-for-lis">
+			<img src="images/explore.jpg"  width="37%" height="auto" id="lisimage0" class="lis" >
+			<p class="lis-image" id="place-name0"><b>hello</b> </p>
+			<div class="lis-desc" >
+				<p id="lis-desc0"></p>
+				<button class="btn" >view details</button>
+			</div>
+		</div>
+		<div class="list-group-item list-group-item-action mar-for-lis">
+			<img src="images/explore.jpg " width="37%" height="auto" id="lisimage1" class="lis">
+			<p class="lis-image" id="place-name1"><b>hello </b></p>
+			<div class="lis-desc">
+				<p  id="lis-desc1">
+				</p>
+				<button class="btn" >view details</button>
+			</div>
+		</div>
+		<div class="list-group-item list-group-item-action mar-for-lis">
+			<img src="images/explore.jpg" width="37%" height="auto" id="lisimage2" class="lis">
+			<p class="lis-image" id="place-name2"><b>hello</b> </p>
+			<div class="lis-desc">
+				<p  id="lis-desc2">
+				</p>
+				<button class="btn" >view details</button>
+			</div>
+		</div>
+		<div class="list-group-item list-group-item-action mar-for-lis">
+			<img src="images/explore.jpg"  width="37%" height="auto" id="lisimage3" class="lis" >
+			<p class="lis-image" id="place-name3"><b>hello</b></p>
+			<div class="lis-desc">
+				<p  id="lis-desc3">
+				</p>
+				<button class="btn" >view details</button>
+			</div>
+		</div>
+		<div class="list-group-item list-group-item-action mar-for-lis">
+			<img src="images/explore.jpg " width="37%" height="auto" id="lisimage4" class="lis">
+			<p class="lis-image" id="place-name4"><b>hello</b> </p>
+			<div class="lis-desc">
+				<p  id="lis-desc4">
+				</p>
+				<button class="btn" >view details</button>
+			</div>
+		</div>
+		<div class="list-group-item list-group-item-action mar-for-lis">
+			<img src="images/explore.jpg" width="37%" height="auto" id="lisimage5" class="lis">
+			<p class="lis-image" id="place-name5"><b>hello</b> </p>
+			<div class="lis-desc">
+				<p  id="lis-desc5">
+				</p>
+				<button class="btn" >view details</button>
+			</div>
+		</div>
+		<div class="list-group-item list-group-item-action mar-for-lis">
+			<img src="images/explore.jpg"  width="37%" height="auto" id="lisimage6" class="lis" >
+			<p class="lis-image" id="place-name6"><b>hello </b></p>
+			<div class="lis-desc" >
+				<p id="lis-desc6">
+				</p>
+				<button class="btn" >view details</button>
+			</div>
+		</div>
+		<div class="list-group-item list-group-item-action mar-for-lis">
+			<img src="images/explore.jpg " width="37%" height="auto" id="lisimage7" class="lis">
+			<p class="lis-image" id="place-name7"><b>hello </b></p>
+			<div class="lis-desc">
+				<p  id="lis-desc7">
+				</p>
+				<button class="btn" >view details</button>
+			</div>
+		</div>
+		<div class="list-group-item list-group-item-action mar-for-lis">
+			<img src="images/explore.jpg" width="37%" height="auto" id="lisimage8" class="lis">
+			<p class="lis-image" id="place-name8"><b>hello </b></p>
+			<div class="lis-desc" >
+				<p id="lis-desc8">
+				</p>
+				<button class="btn" >view details</button>
+			</div>
+
+		</div>
+		<div class="list-group-item list-group-item-action mar-for-lis">
+			<img src="images/explore.jpg"  width="37%" height="auto" id="lisimage9" class="lis" >
+			<p class="lis-image" id="place-name9"><b>hello</b> </p>
+			<div class="lis-desc">
+				<p  id="lis-desc9">
+				</p>
+				<button class="btn" >view details</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<!--Place at the end inside body in the same order-->
+<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase.js"></script>
+<script src="scripts/firebase_initialization.js"></script>
+<script src="scripts/places.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>NP Tourism</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to right,#ff4e50,#f9d423);
+        }
+        .nav-color{
+
+            background:white;
+        }
+        .inside{
+            font-family: 'Beth Ellen', cursive;
+        }
+        #insideh{
+            color:#2b5876;
+            font-family: 'Beth Ellen', cursive;
+        }
+        .insider{
+
+            border-left:1px solid #E5E7E9 ;
+            font-family:'Permanent Marker', cursive;
+        }
+        .hotels{
+            padding: 100px 0;
+        }
+        h1
+        {
+            text-align: center;
+            padding-bottom: 25px;
+        }
+        .fontstyle{
+             color:#2b5876;
+            font-family:'Permanent Marker', cursive;
+        }
+        .h-img img{
+            width: 100%;
+        }
+        .h-img{
+            position: relative;
+        }
+        .h-img h5{
+            margin-top: 8px;
+            color: #2b5876;
+        }
+        .hovereffect {
+            width:100%;
+            height:100%;
+            float:left;
+            overflow:hidden;
+            position:relative;
+            text-align:center;
+            cursor:default;
+        }
+        .hovereffect:hover img {
+            -ms-transform:scale(1.2);
+            -webkit-transform:scale(1.2);
+            transform:scale(1.2);
+        }
+        .hovereffect img {
+            display:block;
+            position:relative;
+            -webkit-transition:all .4s linear;
+            transition:all .4s linear;
+        }
+        .rating
+        {
+            border-radius: 5px;
+            padding:2%;
+            margin: -10px;
+            margin-right: 2%;
+            margin-top: 2%;
+            float: right;
+
+        }
+        .hotels .fa {
+            font-size: 13px;
+            color: #2b5876;
+        }
+        .h-details
+        {
+            padding: 20px;
+            text-align: justify;
+            color: black;
+            font-family: 'Fredoka One', cursive;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="navbar navbar-expand-md navbar-light nav-color sticky-top" >
+    <div class="container-fluid">
+        <a class="navbar-brand" id="insideh" href="#">NP Tourism</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="navbar-nav ml-auto ">
+                <div class="nav-item inside dropdown show ">
+                    <a class="btn nav-link"   href="firstpage.html"><b>HOME</b></a>
+                </div>
+                <div class="nav-item insider ">
+                    <a class="btn bg-light nav-link" href="places.html"><b>EXPLORE</b></a>
+                </div>
+                <div class="nav-item insider">
+                    <a class="btn nav-link" href="hotel.html"><b>HOTELS</b></a>
+                </div>
+                <div class="nav-item insider ">
+                    <a class="btn nav-link" href="flights.html"><b>FLIGHTS</b></a>
+                </div>
+                <div class="nav-item insider ">
+                    <a class="btn nav-link"href="thingstodod.html"><b>THINGS TO DO</b></a>
+
+
+                </div>
+                <div class="nav-item insider ">
+                    <a class="btn nav-link" id="loginpage"><b>LOGIN</b></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="hotels">
+    <h1 class="fontstyle">Tourist spots</h1>
+    <div id="mainelement" class="container">
+        <div id="row0"class="row">
+            <div id="col0"  class="col-md-4 hovereffect">
+                    <div id="imgdi0"class="h-img ">
+                        <img onclick="alertcheck(this.id)" id="image0" height="50%" src="images/login.jpg">
+                        <div class="rating" id="review0">
+                        </div>
+                        <h5 class="fontstyle" id="tou-name0">Tourist Spot</h5>
+
+                    </div>
+                    <div id="tou-desc0" class="h-details">
+                        <p></p>
+                    </div>
+            </div>
+            <div id="col1" class="col-md-4 hovereffect">
+                    <div id="imgdi1" class="h-img">
+                        <img onclick="alertcheck(this.id)" id="image1" src="images/login.jpg">
+                        <div class="rating" id="review1">
+                        </div>
+                        <h5 class="fontstyle" id="tou-name1">Tourist Spot</h5>
+
+                    </div>
+                    <div id="tou-desc1" class="h-details">
+                        <p></p>
+
+                    </div>
+            </div>
+            <div id="col2" class="col-md-4 hovereffect">
+                    <div id="imgdi2" class="h-img">
+                        <img id="image2" onclick="alertcheck(this.id)" src="images/login.jpg">
+                        <div class="rating" id="review2">
+                        </div>
+                        <h5 class="fontstyle" id="tou-name2">Tourist Spot</h5>
+
+                    </div>
+                    <div id="tou-desc2" class="h-details">
+                        <p></p>
+
+                    </div>
+            </div>
+        </div>
+        <div id="row1"class="row">
+            <div id="col3" class="col-md-4 hovereffect">
+                    <div id="imgdi3" class="h-img">
+                        <img id="image3"src="images/login.jpg" onclick="alertcheck(this.id)">
+                        <div class="rating" id="review3">
+                        </div>
+                        <h5 class="fontstyle" id="tou-name3">Tourist Spot</h5>
+
+                    </div>
+                    <div id="tou-desc3" class="h-details">
+                        <p></p>
+
+                    </div>
+            </div>
+            <div id="col4" class="col-md-4 hovereffect">
+                <div id="imgdi4"class="h-img">
+                        <img id="image4" src="images/login.jpg" onclick="alertcheck(this.id)">
+                        <div class="rating" id="review4">
+                        </div>
+                        <h5 class="fontstyle" id="tou-name4">Tourist Spot</h5>
+                </div>
+                    <div id="tou-desc4" class="h-details">
+                        <p></p>
+
+                    </div>
+            </div>
+            <div id="col5" class="col-md-4 hovereffect">
+                    <div id="imgdi5"class="h-img">
+                        <img id="image5" src="images/login.jpg" onclick="alertcheck(this.id)">
+                        <div class="rating" id="review5">
+                        </div>
+                        <h5 class="fontstyle"id="tou-name5">Tourist Spot</h5>
+
+                    </div>
+                    <div id="tou-desc5" class="h-details">
+                        <p></p>
+
+                    </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<!--Place at the end inside body in the same order-->
+<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase.js"></script>
+<script src="scripts/firebase_initialization.js"></script>
+<script src="scripts/tourist-spot.js"></script>
+</body>
+</html>

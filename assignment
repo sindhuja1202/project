@@ -1,0 +1,58 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <ctime>
+
+std::vector<std::pair<std::string, std::string>> generate_questions(int num_questions, const std::string& difficulty) {
+    // Placeholder function to generate questions for a specific difficulty level
+    // You can replace this with your actual question generation logic
+    std::vector<std::string> question_pool = {"Question 1", "Question 2", "Question 3", "Question 4", "Question 5"};
+    std::random_shuffle(question_pool.begin(), question_pool.end());
+
+    std::vector<std::pair<std::string, std::string>> questions;
+    for (int i = 0; i < num_questions; ++i) {
+        questions.push_back(std::make_pair(question_pool[i], difficulty));
+    }
+    return questions;
+}
+
+std::vector<std::pair<std::string, std::string>> generate_question_paper(int total_marks) {
+    double easy_percentage = 0.20;
+    double medium_percentage = 0.50;
+    double hard_percentage = 0.30;
+
+    int easy_marks = static_cast<int>(total_marks * easy_percentage);
+    int medium_marks = static_cast<int>(total_marks * medium_percentage);
+    int hard_marks = static_cast<int>(total_marks * hard_percentage);
+
+    // Generate questions for each difficulty level
+    auto easy_questions = generate_questions(easy_marks, "Easy");
+    auto medium_questions = generate_questions(medium_marks, "Medium");
+    auto hard_questions = generate_questions(hard_marks, "Hard");
+
+    // Combine questions for the final paper
+    std::vector<std::pair<std::string, std::string>> question_paper;
+    question_paper.insert(question_paper.end(), easy_questions.begin(), easy_questions.end());
+    question_paper.insert(question_paper.end(), medium_questions.begin(), medium_questions.end());
+    question_paper.insert(question_paper.end(), hard_questions.begin(), hard_questions.end());
+
+    // Randomize the order of questions
+    std::random_shuffle(question_paper.begin(), question_paper.end());
+
+    return question_paper;
+}
+
+int main() {
+    // Seed the random number generator
+    std::srand(static_cast<unsigned int>(std::time(0)));
+
+    // Example usage
+    int total_marks = 100;
+    auto question_paper = generate_question_paper(total_marks);
+
+    for (const auto& q : question_paper) {
+        std::cout << "Difficulty: " << q.second << ", Question: " << q.first << std::endl;
+    }
+
+    return 0;
+}
